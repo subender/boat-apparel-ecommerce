@@ -6,9 +6,6 @@ import Navigation from './routes/navigation/Navigation';
 
 
 
-const Shop  =  ()=> {
-    return <h2>i am shop</h2>
-}
 
 function App() {
 
