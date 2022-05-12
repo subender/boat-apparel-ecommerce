@@ -4,11 +4,9 @@ import './App.css';
 import Authentication from './routes/Authentication/Authentication';
 import Home from './routes/Home/Home';
 import Navigation from './routes/navigation/Navigation';
+import Shop from './routes/Shop/Shop';
 
 
-const Shop = ()=>{
-  return <h2>you are at shope page</h2>
-}
 
 function App() {
 
