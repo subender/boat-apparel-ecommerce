@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import {
-  createUserDocFromAuth,
+
   signInAuthUserWithEmailAndPass,
   signInWithGooglePopup,
 } from "../../utils/firebase/Firebase";
@@ -39,7 +39,7 @@ const SignInForm = () => {
     e.preventDefault();
 
     try {
-      const {user} = await signInAuthUserWithEmailAndPass(email, password);
+      await signInAuthUserWithEmailAndPass(email, password);
       resetFromFields();
       
     } catch (error) {
@@ -50,6 +50,7 @@ const SignInForm = () => {
 
         case 'auth/user-not-found':
           alert('user do not exist with this email')
+          break;
         
         default:
           console.log(error);

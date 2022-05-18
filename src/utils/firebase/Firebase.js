@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -19,7 +18,7 @@ import {
   query,
   getDocs
 } from "firebase/firestore";
-import { cloneElement } from "react";
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -32,7 +31,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
+ initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
 

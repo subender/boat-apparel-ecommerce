@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, {  useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import CartDropdown from "../../components/cart-dropdown/CartDropdown";
@@ -10,7 +10,7 @@ import "./Navigation.styles.scss";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen} = useContext(CartContext);
 
   return (
     <>

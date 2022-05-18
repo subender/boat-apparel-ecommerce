@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import CategoryItem from '../category-items/CategoryItem'
 import './Directory.styles.scss'
 
@@ -38,7 +37,7 @@ const categories = [
 ];
 
 const Directory = () => {
-  const navigate = useNavigate()
+
   return (
     <div className="directory__container">
       {categories.map(category =>(
