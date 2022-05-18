@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import CategoryItem from '../category-items/CategoryItem'
 import './Directory.styles.scss'
+
 
 const categories = [
   {
